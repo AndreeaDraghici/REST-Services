@@ -9,11 +9,12 @@ import com.ace.ucv.service.ToDoService;
  */
 public class Main {
     public static void main(String[] args) {
+
+        ToDoService service = new ToDoService();
+
         try {
 
-            ToDoService service = new ToDoService();
             service.getTodos();
-
             service.createTodo(new ToDo("New Todo", false));
             service.updateTodo(1, new ToDo("Updated Todo", true));
             service.deleteTodo(1);
