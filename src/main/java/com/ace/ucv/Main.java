@@ -19,7 +19,7 @@ public class Main {
             service.deleteTodo(1);
 
         } catch (Exception e) {
-            e.printStackTrace();
+            System.err.println(e.getMessage());
         }
     }
 }
