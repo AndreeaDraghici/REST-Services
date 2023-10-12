@@ -17,7 +17,7 @@ public class Main {
             service.createTodo(new ToDo("New Todo", false));
             service.updateTodo(1, new ToDo("Updated Todo", true));
             service.deleteTodo(1);
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         }
