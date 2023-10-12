@@ -24,7 +24,7 @@ public class ToDoService {
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         if (response.statusCode() == 200) {
-            System.err.println(response.body());
+            System.out.println(response.body());
         } else {
             System.err.println("Error: " + response.statusCode());
         }
@@ -41,7 +41,7 @@ public class ToDoService {
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         if (response.statusCode() == 201) {
-            System.err.println("Created Todo: " + response.body());
+            System.out.println("Created Todo: " + response.body());
         } else {
             System.err.println("Error: " + response.statusCode());
         }
@@ -58,7 +58,7 @@ public class ToDoService {
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         if (response.statusCode() == 200) {
-            System.err.println("Updated Todo: " + response.body());
+            System.out.println("Updated Todo: " + response.body());
         } else {
             System.err.println("Error: " + response.statusCode());
         }
@@ -74,7 +74,7 @@ public class ToDoService {
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
         if (response.statusCode() == 200) {
-            System.err.println("Deleted Todo with ID " + id);
+            System.out.println("Deleted Todo with ID " + id);
         } else {
             System.err.println("Error: " + response.statusCode());
         }
